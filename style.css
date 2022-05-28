@@ -10,11 +10,19 @@ body {
 
 main {
   height: 100vh;
-  background-image: url(./img/shapes.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
   display: flex;
+  justify-content: center;
+  border-radius: 0 0 0 15px;
+}
+
+body {
+  height: 100vh;
+  background-image: url(./img/shapes.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   justify-content: center;
   border-radius: 0 0 0 15px;
 }
