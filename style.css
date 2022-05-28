@@ -24,3 +24,11 @@ nav {
   flex-direction: row;
   justify-content: space-between;
 }
+.social-handle {
+  flex-direction: row;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0;
+  position: relative;
+  top: 30px;
+}
