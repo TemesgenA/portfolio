@@ -7,3 +7,20 @@
 body {
   font-family: "poppins", sans-serif;
 }
+main {
+  height: 100vh;
+  background-image: url(./img/shapes.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 0 15px;
+}
+
+nav {
+  margin: 0 24px 0 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
