@@ -1,42 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Template for HTML and CSS projects
+## My Portfolio
 
-> A template repo that can be used for html and css projects
-> The template includes tools to fix linter errors.
-
+- Build a personal portfolio site
+- Used my template which is created using linter tools for HTML and CSS
+- Used Figma design to create a UI
+- Used Flexbox to place elements on the page
 
 ## Built With
 
 - html
 - css
+- Flexbox
 
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
 
 ### Author
 
