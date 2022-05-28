@@ -7,6 +7,7 @@
 body {
   font-family: "poppins", sans-serif;
 }
+
 main {
   height: 100vh;
   background-image: url(./img/shapes.png);
@@ -24,6 +25,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .social-handle {
   flex-direction: row;
   display: flex;
