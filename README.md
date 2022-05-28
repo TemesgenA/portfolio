@@ -13,10 +13,6 @@
 - css
 - Flexbox
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
 ### Author
 
 👤 **Temesgen Ayneka**
