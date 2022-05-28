@@ -1,3 +1,81 @@
-.main-header {
-  color: purple;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.Profile {
+  margin: 24px;
+  font-size: x-large;
+}
+
+.Profile h1 {
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #6070ff;
+  letter-spacing: 0.03em;
+  line-height: 20px;
+  font-style: normal;
+  margin-right: 5px;
+}
+
+body {
+  height: 100vh;
+  background-image: url(./img/shapes.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  border-radius: 0 0 0 15px;
+  color: #172b4d;
+  font-family: "poppins", sans-serif;
+}
+
+header {
+  margin: 0 24px 0 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header nav ul {
+  display: flex;
+  padding: 15px;
+  position: relative;
+  bottom: 40px;
+  margin-top: 40px;
+  gap: 204px;
+  right: 15px;
+}
+
+.social-handle {
+  flex-direction: row;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-right: 600px;
+  position: relative;
+  right: 40px;
+}
+
+.Profile h4 {
+  flex-direction: row;
+  display: flex;
+  color: #7f8cff;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
