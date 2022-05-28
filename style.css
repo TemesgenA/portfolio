@@ -19,6 +19,13 @@ main {
   border-radius: 0 0 0 15px;
 }
 
+header {
+  margin: 0 24px 0 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 nav {
   margin: 0 24px 0 24px;
   display: flex;
