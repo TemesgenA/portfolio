@@ -5,6 +5,13 @@
   font-size: x-large;
 }
 
+h1 {
+  font-size: 50px;
+  line-height: 52px;
+  color: #172b4d;
+  margin-top: 60px;
+}
+
 .Profile h1 {
   font-family: "poppins", sans-serif;
   font-style: normal;
@@ -41,12 +48,16 @@ body {
 header {
   margin: 0 24px 0 24px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 ul {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 header nav ul {
@@ -57,6 +68,7 @@ header nav ul {
   margin-top: 40px;
   gap: 204px;
   right: 15px;
+  box-sizing: border-box;
 }
 
 .social-handle {
@@ -67,6 +79,14 @@ header nav ul {
   margin-right: 600px;
   position: relative;
   right: 40px;
+}
+
+a > h4 {
+  color: #6070ff;
+  font-size: 20px;
+  line-height: 38px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .Profile h4 {
@@ -85,10 +105,6 @@ header nav ul {
   margin: 0;
 }
 
-body {
-  font-family: "poppins", sans-serif;
-}
-
 a {
   text-decoration: none;
 }
@@ -104,22 +120,12 @@ main {
   border-radius: 0 0 0 15px;
 }
 
-.Profile {
-  margin: 24px;
-}
-
 nav {
   margin: 0 24px 0 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-h1 {
-  font-size: 50px;
-  line-height: 52px;
-  color: #172b4d;
-  margin-top: 60px;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -136,26 +142,12 @@ article {
   line-height: 24px;
 }
 
-a>h4 {
-  color: #6070ff;
-  font-size: 20px;
-  line-height: 38px;
-  margin: 0;
-}
-
-.Profile>h4 {
+.Profile > h4 {
   margin: 10px 0 5px 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   color: #7f8cff;
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding-left: 0;
 }
 
 li {
@@ -164,17 +156,17 @@ li {
   font-size: 15px;
 }
 
-ul>li {
+ul > li {
   margin-right: 0 20px 0 0;
   color: #505f79;
   font-size: 18px;
 }
 
-a>i {
+a > i {
   font-size: 25px;
 }
 
-li:hover {
+li :hover {
   color: #7f8cff;
 }
 
@@ -182,7 +174,7 @@ li:active {
   color: #2230d2;
 }
 
-.Work {
+.Works {
   width: 100%;
   height: max-content;
   display: grid;
@@ -212,7 +204,7 @@ li:active {
   height: 582px;
 }
 
-.Card>img {
+.Card > img {
   width: 295px;
   height: 220px;
   border-radius: 8px;
@@ -223,7 +215,7 @@ li:active {
   height: 500px;
 }
 
-.Title>h4 {
+.Title > h4 {
   font-size: 32px;
   font-weight: 700;
   margin-top: 0;
@@ -236,13 +228,13 @@ li:active {
   align-items: center;
 }
 
-.Campoy>span {
+.Campoy > span {
   color: #344563;
   font-size: 13px;
   font-weight: 600;
 }
 
-.Campoy>ul {
+.Campoy > ul {
   width: 200px;
   margin-left: 30px;
   display: flex;
@@ -257,7 +249,7 @@ li:active {
   margin-top: 20px;
 }
 
-.Campoy>ul>li {
+.Campoy > ul > li {
   font-size: 15px;
   list-style-type: disc;
   margin: 0 15px;
@@ -321,11 +313,11 @@ li:active {
   color: #7f8cff;
 }
 
-.Lag>i {
+.Lag > i {
   font-size: 20px;
 }
 
-.AboutTop>ul>li>i {
+.AboutTop > ul > li > i {
   font-size: 25px;
   margin-top: 20px;
 }
@@ -350,7 +342,7 @@ li:active {
   align-items: center;
 }
 
-.Lag>h5 {
+.Lag > h5 {
   color: #000;
   font-weight: 500;
   font-size: 20px;
@@ -366,11 +358,11 @@ li:active {
   margin: 10px 0;
 }
 
-.List>img {
+.List > img {
   margin-left: 20px;
 }
 
-.List>p {
+.List > p {
   margin-left: 10px;
   font-weight: 500;
   font-size: 15px;
