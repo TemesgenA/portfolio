@@ -20,6 +20,18 @@ h1 {
   line-height: 52px;
   display: flex;
   align-items: center;
+  margin-right: 24px;
+}
+
+.Profile p {
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
 }
 
 #logo {
@@ -121,7 +133,7 @@ main {
 }
 
 nav {
-  margin: 0 24px 0 24px;
+  margin: 0 24px 0 1px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -371,4 +383,11 @@ li:active {
 
 .line {
   border-bottom: 1px solid #9bafe0;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
 }
