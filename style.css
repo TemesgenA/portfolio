@@ -1,104 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-.Profile {
-  margin: 24px;
-  font-size: x-large;
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px;
 }
 
-h1 {
+.logo {
+  margin: 12px;
+}
+
+.menu {
+  margin: 12px;
+}
+
+.Profile {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+  gap: 12px;
+}
+
+/* h1 {
   font-size: 50px;
   line-height: 52px;
   color: #172b4d;
   margin-top: 60px;
-}
+} */
 
 .Profile h1 {
-  font-family: "poppins", sans-serif;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
   align-items: center;
-  margin-right: 24px;
+  color: #172b4d;
+  width: 327px;
+  height: 150px;
+  margin-top: 90px;
+  margin-bottom: 0px;
 }
 
 .Profile p {
-  font-family: "poppins", sans-serif;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  display: flex;
   align-items: center;
-  margin-right: 24px;
-}
-
-#logo {
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: #6070ff;
-  letter-spacing: 0.03em;
-  line-height: 20px;
-  font-style: normal;
-  margin-right: 5px;
-}
-
-body {
-  height: 100vh;
-  background-image: url(./img/shapes.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content: center;
-  border-radius: 0 0 0 15px;
-  color: #172b4d;
-  font-family: "poppins", sans-serif;
-}
-
-header {
-  margin: 0 24px 0 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-header nav ul {
-  display: flex;
-  padding: 15px;
-  position: relative;
-  bottom: 40px;
-  margin-top: 40px;
-  gap: 204px;
-  right: 15px;
-  box-sizing: border-box;
-}
-
-.social-handle {
-  flex-direction: row;
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  margin-right: 600px;
-  position: relative;
-  right: 40px;
-}
-
-a > h4 {
-  color: #6070ff;
-  font-size: 20px;
-  line-height: 38px;
-  margin: 0;
-  box-sizing: border-box;
 }
 
 .Profile h4 {
@@ -112,9 +63,30 @@ a > h4 {
   line-height: 24px;
 }
 
-* {
-  padding: 0;
+.profile.social-handle {
+  align-items: baseline;
+  gap: 10px;
+  margin-right: 600px;
+  position: relative;
+  right: 40px;
+}
+
+body {
+  height: 100vh;
+  background-image: url(./img/shapes.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  border-radius: 0 0 0 15px;
+  color: #172b4d;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
   margin: 0;
+  padding-left: 0;
 }
 
 a {
@@ -132,14 +104,6 @@ main {
   border-radius: 0 0 0 15px;
 }
 
-nav {
-  margin: 0 24px 0 1px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
 h2 {
   font-size: 50px;
   line-height: 52px;
@@ -154,7 +118,7 @@ article {
   line-height: 24px;
 }
 
-.Profile > h4 {
+.Profile>h4 {
   margin: 10px 0 5px 0;
   font-size: 16px;
   font-weight: 500;
@@ -168,13 +132,13 @@ li {
   font-size: 15px;
 }
 
-ul > li {
+ul>li {
   margin-right: 0 20px 0 0;
   color: #505f79;
   font-size: 18px;
 }
 
-a > i {
+a>i {
   font-size: 25px;
 }
 
@@ -216,7 +180,7 @@ li:active {
   height: 582px;
 }
 
-.Card > img {
+.Card>img {
   width: 295px;
   height: 220px;
   border-radius: 8px;
@@ -227,7 +191,7 @@ li:active {
   height: 500px;
 }
 
-.Title > h4 {
+.Title>h4 {
   font-size: 32px;
   font-weight: 700;
   margin-top: 0;
@@ -240,13 +204,13 @@ li:active {
   align-items: center;
 }
 
-.Campoy > span {
+.Campoy>span {
   color: #344563;
   font-size: 13px;
   font-weight: 600;
 }
 
-.Campoy > ul {
+.Campoy>ul {
   width: 200px;
   margin-left: 30px;
   display: flex;
@@ -261,7 +225,7 @@ li:active {
   margin-top: 20px;
 }
 
-.Campoy > ul > li {
+.Campoy>ul>li {
   font-size: 15px;
   list-style-type: disc;
   margin: 0 15px;
@@ -325,11 +289,11 @@ li:active {
   color: #7f8cff;
 }
 
-.Lag > i {
+.Lag>i {
   font-size: 20px;
 }
 
-.AboutTop > ul > li > i {
+.AboutTop>ul>li>i {
   font-size: 25px;
   margin-top: 20px;
 }
@@ -354,7 +318,7 @@ li:active {
   align-items: center;
 }
 
-.Lag > h5 {
+.Lag>h5 {
   color: #000;
   font-weight: 500;
   font-size: 20px;
@@ -370,11 +334,11 @@ li:active {
   margin: 10px 0;
 }
 
-.List > img {
+.List>img {
   margin-left: 20px;
 }
 
-.List > p {
+.List>p {
   margin-left: 10px;
   font-weight: 500;
   font-size: 15px;
