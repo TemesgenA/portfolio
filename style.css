@@ -267,8 +267,6 @@ main {
   flex-direction: column;
   list-style: none;
   gap: 12px;
-  width: 327px;
-  height: 248.15px;
 }
 
 .Skill-List {
@@ -280,8 +278,7 @@ main {
   font-size: 20px;
   line-height: 24px;
   align-items: center;
-  margin: 24px;
-  /* gap: 48px; */
+  margin-right: 24px;
 }
 
 .skill-frame {
@@ -291,6 +288,5 @@ main {
   background: #F7F7F9;
   border-radius: 8px;
   align-items: center;
-  padding: 12px;
   gap: 12px;
 }
