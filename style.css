@@ -269,6 +269,14 @@ main {
   gap: 12px;
 }
 
+.about ul li :hover {
+  color: #7f8cff;
+}
+
+.about ul li :active {
+  color: #2230d2;
+}
+
 .Skill-List {
   display: flex;
   justify-content: space-between;
