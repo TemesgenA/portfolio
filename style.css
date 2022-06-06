@@ -48,14 +48,13 @@
 }
 
 .Profile h4 {
-  flex-direction: row;
-  display: flex;
   color: #7f8cff;
   font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  margin: 10px 0 5px 0;
 }
 
 .profile.social-handle {
@@ -75,7 +74,7 @@ body {
   border-radius: 0 0 0 15px;
   color: #172b4d;
 }
-
+/* Start of Work section*/
 ul {
   display: flex;
   flex-direction: row;
@@ -86,17 +85,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-main {
-  height: 100vh;
-  background-image: url(../img/header-shapes.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  border-radius: 0 0 0 15px;
 }
 
 h2 {
@@ -111,14 +99,6 @@ article {
   font-weight: 400px;
   font-size: 16px;
   line-height: 24px;
-}
-
-.Profile > h4 {
-  margin: 10px 0 5px 0;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  color: #7f8cff;
 }
 
 li {
@@ -284,14 +264,14 @@ li:active {
   color: #7f8cff;
 }
 
-.Lag > i {
+/* .Lag > i {
   font-size: 20px;
-}
+} */
 
-.AboutTop > ul > li > i {
+/* .AboutTop > ul > li > i {
   font-size: 25px;
   margin-top: 20px;
-}
+} */
 
 .b {
   width: 180px;
@@ -329,7 +309,7 @@ li:active {
   margin: 10px 0;
 }
 
-.List > img {
+/* .List > img {
   margin-left: 20px;
 }
 
@@ -338,7 +318,7 @@ li:active {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-}
+} */
 
 .line {
   border-bottom: 1px solid #9bafe0;
