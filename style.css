@@ -260,6 +260,7 @@ section.about {
 }
 
 ul.container {
+  margin-top: 30px;
   height: max-content;
   display: flex;
   flex-direction: column;
@@ -270,7 +271,7 @@ ul.container {
 .skills {
   display: flex;
   width: 310px;
-  height: 72px;
+  height: 66.72px;
   justify-content: space-between;
   align-items: center;
 }
@@ -289,6 +290,7 @@ ul.container {
 .List {
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
   list-style: none;
 }
 
@@ -301,11 +303,10 @@ ul.container {
   border-radius: 8px;
 }
 
-ul li img {
-  max-width: auto;
+.List > img {
+  margin-left: 20px;
+  /* width: 48px; */
   height: 48px;
-  margin-top: 8px;
-  margin-left: 8px;
 }
 
 .List > p {
