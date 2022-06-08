@@ -305,7 +305,13 @@ ul.container {
 
 .List > img {
   margin-left: 20px;
-  /* width: 48px; */
+  height: 48px;
+}
+
+section.about ul li img {
+  margin-top: 9px;
+  margin-left: 12px;
+  max-width: auto;
   height: 48px;
 }
 
@@ -333,11 +339,11 @@ ul.container {
   flex-direction: column;
   align-items: center;
   background: #6070ff;
-  height: max-content;
+  height:max-content;
   border-radius: 10% 0% 0% 0%;
   background-image: url(/img/contact-form-shapes-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size:contain;
 }
 
 .form-container h2 {
@@ -351,6 +357,7 @@ ul.container {
   align-items: center;
   text-align: center;
   color: #fff;
+  top: 107px;
 }
 
 .form-container p {
@@ -417,5 +424,5 @@ input[type=submit] {
   border-radius: 10px;
   gap: 12px;
   margin-top: 24px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
