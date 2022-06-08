@@ -195,7 +195,7 @@ main {
   border-radius: 16px;
 }
 
-.about {
+section.about {
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -203,7 +203,7 @@ main {
   border-radius: 0% 10% 0% 0%;
 }
 
-.AboutContainer {
+/* .AboutContainer {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -213,7 +213,7 @@ main {
   height: 1083px;
   background: #fff;
   border-top-right-radius: 130px;
-}
+} */
 
 .about h1 {
   font-family: "poppins", sans-serif;
@@ -227,6 +227,7 @@ main {
   width: 327px;
   height: 101px;
   margin: 24px;
+  top: 114px;
 }
 
 .about p {
@@ -270,7 +271,7 @@ main {
   margin: 24px;
 }
 
-.container {
+ul.container {
   margin-top: 30px;
   height: max-content;
   display: flex;
@@ -316,7 +317,7 @@ main {
 
 .List > img {
   margin-left: 20px;
-  width: 48px;
+  /* width: 48px; */
   height: 48px;
 }
 
