@@ -338,3 +338,92 @@ main {
 .about ul li :active {
   color: #2230d2;
 }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #6070ff;
+  height: max-content;
+  border-radius: 10% 0% 0% 0%;
+}
+
+.form-container h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.form-container p {
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin: 24px;
+}
+
+input[type=text],
+input[type=email] {
+  width: 327px;
+  height: 48px;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  margin-right: 24px;
+  margin-left: 24px;
+  resize: vertical;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
+
+select,
+textarea {
+  width: 327px;
+  height: 170px;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  margin-right: 24px;
+  margin-left: 24px;
+  resize: vertical;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
+
+input[type=submit] {
+  background-color: #fff;
+  color: #6070ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 140px;
+  height: 48px;
+  margin-left: 24px;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.endline {
+  width: 134px;
+  height: 5px;
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 10px;
+  gap: 12px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
