@@ -203,18 +203,6 @@ section.about {
   border-radius: 0% 10% 0% 0%;
 }
 
-/* .AboutContainer {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-  gap: 12px;
-  width: 100%;
-  height: 1083px;
-  background: #fff;
-  border-top-right-radius: 130px;
-} */
-
 .about h1 {
   font-family: "poppins", sans-serif;
   font-style: normal;
