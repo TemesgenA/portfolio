@@ -351,29 +351,29 @@ main {
 .form-container h2 {
   display: flex;
   justify-content: center;
-  font-family: 'Poppins';
+  font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   align-items: center;
-  text-align: center;  
-  color: #FFFFFF;
+  text-align: center;
+  color: #fff;
 }
 
 .form-container p {
-  font-family: 'Poppins';
+  font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
-  margin-left: 24px;
+  color: #ebebff;
   margin: 24px;
 }
 
-input[type=text], input[type=email] {
+input[type=text],
+input[type=email] {
   width: 327px;
   height: 48px;
   padding: 12px;
@@ -383,10 +383,12 @@ input[type=text], input[type=email] {
   margin-right: 24px;
   margin-left: 24px;
   resize: vertical;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
-select, textarea {
+
+select,
+textarea {
   width: 327px;
   height: 170px;
   padding: 12px;
@@ -396,14 +398,13 @@ select, textarea {
   margin-right: 24px;
   margin-left: 24px;
   resize: vertical;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
 
 input[type=submit] {
   background-color: #fff;
-  background: #fff;
-  color:#6070FF;
+  color: #6070ff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -420,7 +421,7 @@ input[type=submit] {
   width: 134px;
   height: 5px;
   bottom: 8px;
-  background: #0D151E;
+  background: #0d151e;
   border-radius: 10px;
   gap: 12px;
   margin-top: 24px;
