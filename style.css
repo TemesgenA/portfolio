@@ -338,12 +338,13 @@ section.about ul li img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: min-content;
   background: #6070ff;
-  height: max-content;
   border-radius: 10% 0% 0% 0%;
   background-image: url(/img/contact-form-shapes-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-position: 100% 20%;
+  background-size: 50%;
 }
 
 .form-container h2 {
