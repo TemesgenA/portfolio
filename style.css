@@ -646,7 +646,16 @@ hr {
   }
 
   .form-des p {
-    width: 400px;
+    width: 569px;
+  }
+
+  #user-name,
+  #email-address {
+    width: 447px;
+  }
+
+  #msg {
+    width: 447px;
   }
 
   .shape {
@@ -670,5 +679,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 447px;
+
   }
 }
