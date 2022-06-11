@@ -328,7 +328,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding: 0;
-  width: 700px;
 }
 
 .languages {
@@ -621,6 +620,15 @@ hr {
     margin-right: 37px;
     margin-left: 80px;
   }
+
+  .about-cv {
+    width: 60%;
+  }
+
+  .about-header {
+    width: 40%;
+  }
+
 
   .languages-list li {
     display: flex;
