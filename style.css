@@ -25,8 +25,6 @@ header {
   font-weight: 700;
 }
 
-
-
 img.nav-pic {
   height: 24px;
   padding-right: 15px;
@@ -685,9 +683,6 @@ hr {
     align-items: center;
     width: 447px;
   }
-  .animations {
-    
-  }
 }
 
 button:hover {
@@ -701,6 +696,7 @@ img:hover {
 input:hover {
  transform: translate(2%);
 }
+
 textarea:hover {
   transform: translate(2%);
 }
@@ -710,7 +706,6 @@ header img {
 }
 
 @keyframes logo {
-
   0% {
     rotate: (0);
   }
