@@ -659,9 +659,10 @@ hr {
   }
 
   .form-min {
-    background-image: url(../img/contact_background.svg);
+    background-image: url(/img/contact-form-background-shapes.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 90% 90%;
+    background-position: center;
   }
 
   .form-ul {
