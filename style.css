@@ -693,11 +693,11 @@ img:hover {
 }
 
 input:hover {
-   transform: translate(2%);
+  transform: translate(2%);
 }
 
 textarea:hover {
-    transform: translate(2%);
+  transform: translate(2%);
 }
 
 @keyframes logo {
@@ -706,6 +706,6 @@ textarea:hover {
   }
 
   100% {
-     transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
