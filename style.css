@@ -329,6 +329,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding: 0;
+  width: 700px;
 }
 
 .languages {
@@ -617,7 +618,7 @@ hr {
   }
 
   .about-description {
-    width: 50%;
+    width: 40%;
     margin-right: 37px;
     margin-left: 80px;
   }
