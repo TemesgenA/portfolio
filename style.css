@@ -546,4 +546,18 @@ hr {
     width: 50%;
     height: 448px;
   }
+
+  .description-container2,
+  .description-container4 {
+    width: 50%;
+    margin-right: 46px;
+    margin-left: 46px;
+  }
+
+  .description-container1,
+  .description-container3 {
+    width: 50%;
+    margin-left: 46px;
+    margin-right: 46px;
+  }
   
