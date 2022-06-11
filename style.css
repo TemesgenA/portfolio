@@ -25,8 +25,8 @@ header {
   font-weight: 700;
 }
 
-.nav-pic {
-  height: 12px;
+img.nav-pic {
+  height: 24px;
   padding-right: 15px;
 }
 
@@ -65,7 +65,7 @@ form li {
 }
 
 .home {
-  background-image: url("../img/3.svg");
+  background-image: url("./img/3.svg");
   background-color: white;
   background-size: cover;
   border-bottom-left-radius: 70px;
@@ -226,7 +226,7 @@ button:hover {
 }
 
 .work-img1 {
-  background-image: url(../img/Snapshoot1.png);
+  background-image: url("./img/Snapshoot1.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -244,7 +244,7 @@ button:hover {
 }
 
 .work-img2 {
-  background-image: url(../img/Snapshoot2.png);
+  background-image: url("./img/Snapshoot2.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -252,7 +252,7 @@ button:hover {
 }
 
 .work-img3 {
-  background-image: url(../img/Snapshoot3.png);
+  background-image: url("./img/Snapshoot3.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -260,7 +260,7 @@ button:hover {
 }
 
 .work-img4 {
-  background-image: url(../img/Snapshoot4.png);
+  background-image: url("./img/Snapshoot4.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -471,7 +471,7 @@ button:hover {
 .form-min {
   background-color: #6070ff;
   border-top-left-radius: 70px;
-  background-image: url("../img/form.png");
+  background-image: url("./img/form.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 50px 24px 0 24px;
@@ -566,7 +566,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   #home {
-    background-image: url(../img/home_bg.svg);
+    background-image: url("./img/home_bg.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -652,7 +652,7 @@ hr {
   }
 
   .form-min {
-    background-image: url(/img/contact-form-background-shapes.svg);
+    background-image: url("./img/contact-form-background-shapes.svg");
     background-repeat: no-repeat;
     background-size: 90% 90%;
     background-position: center;
