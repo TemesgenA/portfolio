@@ -560,4 +560,15 @@ hr {
     margin-left: 46px;
     margin-right: 46px;
   }
+
+  .grid-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .grid-item2,
+  .grid-item4 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   
