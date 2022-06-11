@@ -17,7 +17,7 @@ header {
 #logo {
   text-decoration: none;
   color: #6070ff;
-  margin: 23.94px auto 23.94px 24px;
+  margin: 23.94px auto 23.94px 10%;
   width: 100vm;
   height: 20px;
   font-size: 18px;
@@ -52,6 +52,7 @@ form li {
   text-align: center;
   color: #344563;
   margin-left: 32px;
+  margin-right: 32px;
 }
 
 .nav-ul a {
@@ -59,8 +60,12 @@ form li {
   transition: transform 0.2s;
 }
 
+.nav-ul li a {
+  color: #344563;
+}
+
 .home {
-  background-image: url("./img/header-shapes\ mobile@2x.png");
+  background-image: url("../img/3.svg");
   background-color: white;
   background-size: cover;
   border-bottom-left-radius: 70px;
@@ -77,18 +82,25 @@ form li {
   font-weight: 900;
   line-height: 52px;
   font-family: 'Poppins', sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .home p {
   width: 327px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .connect {
   color: #7f8cff;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .home li {
   padding-left: 8px;
+  
 }
 
 form ul {
@@ -100,6 +112,8 @@ form ul {
   list-style: none;
   display: flex;
   padding-left: 0;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .work {
@@ -213,7 +227,7 @@ button:hover {
 }
 
 .work-img1 {
-  background-image: url("./img/Snapshoot-Portfolio.png");
+  background-image: url(../img/Snapshoot1.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -231,7 +245,7 @@ button:hover {
 }
 
 .work-img2 {
-  background-image: url(./img/Snapshoot-Portfolio2.png);
+  background-image: url(../img/Snapshoot2.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -239,7 +253,7 @@ button:hover {
 }
 
 .work-img3 {
-  background-image: url(./img/Snapshoot-Portfolio3.png);
+  background-image: url(../img/Snapshoot3.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -247,7 +261,7 @@ button:hover {
 }
 
 .work-img4 {
-  background-image: url(./img/Snapshoot-Portfolio4.png);
+  background-image: url(../img/Snapshoot4.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -334,15 +348,17 @@ button:hover {
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   margin-right: auto;
-  display: flex;
   align-items: center;
-  color: #000;
+  color: #344563;
 }
+
+
 
 .languages img {
   display: flex;
@@ -350,8 +366,8 @@ button:hover {
   align-items: flex-start;
   padding: 8px;
   margin-right: 40px;
-  width: 12px;
-  height: 6px;
+  width: 23px;
+  height: 30px;
   right: 26px;
   border-radius: 8px;
 }
@@ -393,49 +409,63 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-left: 12px;
 }
 
 .framework p {
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   margin-right: auto;
   align-items: center;
-  color: #000;
+  color: #344563;
 }
 
 .skills {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-left: 12px;
 }
 
 .skills p {
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   margin-right: auto;
   align-items: center;
-  color: #000;
+  color: #344563;
 }
 
 .arrow-img {
-  transform: rotate(-90deg);
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-right: 40px;
   padding-top: 30px;
-  width: 12px;
-  height: 6px;
+  width: 30px;
+  height: 23px;
 }
 
 .form-container {
@@ -447,7 +477,7 @@ button:hover {
 .form-min {
   background-color: #6070ff;
   border-top-left-radius: 70px;
-  background-image: url("./img/contact-form-shapes-mobile.png");
+  background-image: url("../img/form.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 50px 24px 0 24px;
@@ -492,6 +522,14 @@ form {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+
 }
 
 #msg {
@@ -500,6 +538,12 @@ form {
   border-radius: 8px;
   width: 327px;
   height: 170px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #B3BAC5;
 }
 
 .shape {
@@ -529,7 +573,7 @@ hr {
 
 @media screen and (min-width: 768px) {
   #home {
-    background-image: url(./img/desktop/header_background_shape_desktop.svg);
+    background-image: url(../img/home_bg.svg);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -564,6 +608,8 @@ hr {
   .grid-item {
     display: flex;
     flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .grid-item2,
@@ -613,7 +659,7 @@ hr {
   }
 
   .form-min {
-    background-image: url(../img/desktop/contact_background.svg);
+    background-image: url(../img/contact_background.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
