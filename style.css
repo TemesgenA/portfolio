@@ -522,6 +522,7 @@ form {
   line-height: 20px;
   display: flex;
   align-items: center;
+  padding-left: 16px;
 }
 
 #msg {
@@ -536,6 +537,7 @@ form {
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
+  padding-left: 16px;
 }
 
 .shape {
