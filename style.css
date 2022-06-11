@@ -100,7 +100,6 @@ form li {
 
 .home li {
   padding-left: 8px;
-  
 }
 
 form ul {
@@ -348,7 +347,7 @@ button:hover {
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -357,8 +356,6 @@ button:hover {
   align-items: center;
   color: #344563;
 }
-
-
 
 .languages img {
   display: flex;
@@ -410,7 +407,6 @@ button:hover {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
-  align-items: center;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -421,7 +417,7 @@ button:hover {
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -434,8 +430,6 @@ button:hover {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  align-items: center;
   flex-direction: row;
   align-items: center;
   font-weight: 500;
@@ -448,7 +442,7 @@ button:hover {
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -522,14 +516,13 @@ form {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
   display: flex;
   align-items: center;
-
 }
 
 #msg {
@@ -538,12 +531,12 @@ form {
   border-radius: 8px;
   width: 327px;
   height: 170px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #B3BAC5;
+  color: #b3bac5;
 }
 
 .shape {
