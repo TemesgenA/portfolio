@@ -571,4 +571,57 @@ hr {
     display: flex;
     flex-direction: row-reverse;
   }
+
+  .about-myself {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-description {
+    width: 50%;
+    margin-right: 37px;
+    margin-left: 80px;
+  }
+
+  .languages-list li {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+  }
+
+  .languages-list ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form-des p {
+    width: 400px;
+  }
+
+  .shape {
+    display: none;
+  }
+
+  .nav-ul a:hover {
+    transform: scale(1.5);
+    color: #2230d2;
+  }
   
+  .form-min {
+    background-image: url(../img/desktop/contact_background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .form-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
