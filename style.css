@@ -202,11 +202,6 @@ form button {
   border: none;
 }
 
-button:hover {
-  background-color: #2230d2;
-  color: #fff;
-}
-
 .work-button {
   box-sizing: border-box;
   background-color: white;
@@ -354,6 +349,10 @@ button:hover {
   margin-right: auto;
   align-items: center;
   color: #344563;
+}
+
+header img {
+  animation: logo 300ms ease-in-out;
 }
 
 .languages img {
@@ -683,7 +682,30 @@ hr {
     align-items: center;
     width: 447px;
   }
-  .animations {
-    
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+input:hover {
+  transform: translate(2%);
+}
+
+textarea:hover {
+  transform: translate(2%);
+}
+
+@keyframes logo {
+  0% {
+    rotate: (0);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
