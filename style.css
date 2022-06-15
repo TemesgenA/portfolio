@@ -15,14 +15,10 @@ header {
 }
 
 #logo {
-  text-decoration: none;
-  color: #6070ff;
   margin: 23.94px auto 23.94px 10%;
-  width: 100vm;
-  height: 20px;
-  font-size: 18px;
+  width: 100px;
+  height: 40px;
   display: flex;
-  font-weight: 700;
 }
 
 img.nav-pic {
@@ -225,7 +221,7 @@ button:hover {
 }
 
 .work-img1 {
-  background-image: url("./img/Snapshoot1.png");
+  background-image: url("./img/Snapshoot1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -243,7 +239,7 @@ button:hover {
 }
 
 .work-img2 {
-  background-image: url("./img/Snapshoot2.png");
+  background-image: url("./img/Snapshoot2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -251,7 +247,7 @@ button:hover {
 }
 
 .work-img3 {
-  background-image: url("./img/Snapshoot3.png");
+  background-image: url("./img/Snapshoot3.svg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -259,7 +255,7 @@ button:hover {
 }
 
 .work-img4 {
-  background-image: url("./img/Snapshoot4.png");
+  background-image: url("./img/Snapshoot4.svg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
