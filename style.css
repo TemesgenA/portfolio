@@ -15,14 +15,10 @@ header {
 }
 
 #logo {
-  text-decoration: none;
-  color: #6070ff;
   margin: 23.94px auto 23.94px 10%;
-  width: 100vm;
-  height: 20px;
-  font-size: 18px;
+  width: 100px;
+  height: 40px;
   display: flex;
-  font-weight: 700;
 }
 
 img.nav-pic {
