@@ -1,7 +1,3 @@
-// function toggleMobileMenu(menu) {
-//     menu.classList.toggle('open');
-// }
-
 var mainListDiv = document.getElementById("mainListDiv"),
     mediaButton = document.getElementById("mediaButton");
 
