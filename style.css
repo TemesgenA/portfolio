@@ -5,31 +5,98 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-header {
+/* header {
   width: 100vw;
   position: relative;
   margin: 0;
   display: flex;
   align-items: center;
   background-color: white;
+} */
+
+header {
+  padding: 0 20px;
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
 }
+
+/* #logo {
+  margin: 23.94px auto 23.94px 10%;
+  width: 100px;
+  height: 40px;
+  display: flex;
+} */
 
 #logo {
   margin: 23.94px auto 23.94px 10%;
   width: 100px;
   height: 40px;
   display: flex;
+  align-items: center;
 }
 
-img.nav-pic {
-  height: 24px;
-  padding-right: 15px;
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 28px;
+  height: 3px;
+  background-color: #6070FF;
+  margin: 6px 32px;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
 }
 
 .nav-ul {
   list-style: none;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  height: 15px;
+}
+
+.nav-ul-mobile {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   height: 15px;
 }
@@ -545,8 +612,18 @@ hr {
   flex: 0 0 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-ul a {
+@media screen and (max-width: 576px) {
+  .nav-ul {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+
+@media screen and (min-width:576px) {
+  #hamburger-icon {
     display: none;
   }
 }
@@ -570,10 +647,6 @@ hr {
 
   .home p {
     width: 100%;
-  }
-
-  .nav-pic {
-    display: none;
   }
 
   .work-img {

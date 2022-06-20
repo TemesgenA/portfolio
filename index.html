@@ -14,21 +14,24 @@
 
 <body>
     <header>
-        <a id="logo" href="#home"><img src="./img/Logo-Placeholder.png" alt="logo icon"></a>
+        <div><a id="logo" href="#home"><img src="./img/Logo-Placeholder.png" alt="logo icon"></a></div>
         <nav>
             <ul class="nav-ul">
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li><img class="nav-pic" src="./img/icon-menu.png" alt="nav menu icon"></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="nav-ul-mobile">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <section id="home" class="home">
         <div class="home-content">
@@ -263,7 +266,8 @@
                             <input type="text" name="name" id="user-name" placeholder="Your name here.." required>
                         </li>
                         <li>
-                            <input type="email" name="email" id="email-address" placeholder="Your E-mail here.." required>
+                            <input type="email" name="email" id="email-address" placeholder="Your E-mail here.."
+                                required>
                         </li>
                         <li>
                             <textarea name="message" id="msg" maxlength="500" placeholder="Write your Message Here"
@@ -277,6 +281,7 @@
             </div>
         </div>
     </section>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
