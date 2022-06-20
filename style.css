@@ -3,38 +3,36 @@ body {
   width: 100vw;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  /* overflow-x: hidden; */
 }
 
-/* header {
-  width: 100vw;
-  position: relative;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  background-color: white;
-} */
-
 header {
-  padding: 0 20px;
+  padding: 0 32px;
   background-color: white;
-  height: 50px;
+  height: 74px;
   display: flex;
   justify-content: space-between;
 }
 
-/* #logo {
-  margin: 23.94px auto 23.94px 10%;
-  width: 100px;
-  height: 40px;
-  display: flex;
-} */
-
 #logo {
-  margin: 23.94px auto 23.94px 10%;
-  width: 100px;
-  height: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
   display: flex;
   align-items: center;
+  text-align: center;
+  color: #6070FF;
+  margin: auto 0;
+}
+
+#logo a {
+  padding: 0%;
+  color: #6070FF;
+  text-decoration: none;
+  width: 100px;
+  height: 20px;
 }
 
 #hamburger-icon {
@@ -65,15 +63,17 @@ header {
   transform: rotate(45deg) translate(-6px, -8px);
 }
 
-.open .mobile-menu {
+.open .nav-ul-mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
-.mobile-menu {
-  display: none;
+.nav-ul-mobile {
+  display: block;
+  list-style: none;
+  text-decoration: none;
   position: absolute;
   top: 50px;
   left: 0;
@@ -81,24 +81,23 @@ header {
   width: 100%;
 }
 
-.mobile-menu li {
+.nav-ul-mobile li {
   margin-bottom: 10px;
 }
+
+.nav-ul-mobile a {
+  text-decoration: none;
+}
+
 
 .nav-ul {
   list-style: none;
   display: flex;
+  height: 100%;
   flex-direction: row;
   align-items: center;
-  height: 15px;
-}
-
-.nav-ul-mobile {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 15px;
+  justify-content: space-around;
+  margin: auto 0;
 }
 
 form li {
@@ -734,7 +733,7 @@ hr {
   }
 
   .nav-ul a:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: #2230d2;
   }
 
