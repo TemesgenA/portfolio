@@ -1,11 +1,12 @@
-var mainListDiv = document.getElementById("mainListDiv"),
-    mediaButton = document.getElementById("mediaButton");
+const mainMediaButton = document.querySelector('.main_media_button');
+const navMenu = document.querySelector('.nav-menu');
 
-mediaButton.onclick = function () {
-    
-    "use strict";
-    
-    mainListDiv.classList.toggle("show_list");
-    mediaButton.classList.toggle("active");
-    
-};
+mainMediaButton.addEventListener('click', () => {
+    mainMediaButton.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+    mainMediaButton.classList.remove('active');
+    navMenu.classList.remove('active');
+}));
