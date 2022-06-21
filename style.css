@@ -112,6 +112,7 @@ form li {
   width: 327px;
   margin-left: 10%;
   margin-right: 10%;
+  padding-right: 32px;
 }
 
 .connect {
@@ -630,14 +631,6 @@ hr {
       height: 40px;
   }
 
-  /* .nav div.main_list ul li a{
-      text-align: center;
-      line-height: 40px;
-      width: 100%;
-      height: 40px;
-      display: table;
-  } */
-
   .nav div.media_button {
     width: 40px;
     height: 40px;
@@ -692,15 +685,15 @@ hr {
     background: #6070FF;
     mix-blend-mode: multiply;
     inset: 0 0 0 0;
-    position: fixed;
-    background-position: top;
     background-repeat: no-repeat;
+    backdrop-filter: blur(0.75em);
   }
 
   .nav .container div.media_button button.active span:nth-of-type(1) {
     transform: rotate3d(0, 0, 1, 45deg);
     position: absolute;
     margin: 0;
+    background: white;
   }
   
   .nav .container div.media_button button.active span:nth-of-type(2) {
@@ -711,6 +704,7 @@ hr {
     transform: rotate3d(0, 0, 1, -45deg);
     position: absolute;
     margin: 0;
+    background: white;
   }
   
   .nav div.media_button button.active:hover span:nth-of-type(1) {
@@ -723,8 +717,10 @@ hr {
   
 }
 
-@media screen and (min-width:576px) {
-  
+@media screen and (min-width:768px) {
+  .nav div.media_button button.main_media_button {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 980px) {
@@ -745,7 +741,7 @@ hr {
   }
 
   .home p {
-    width: 100%;
+    width: 75%;
   }
 
   .work-img {
