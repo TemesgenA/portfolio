@@ -1,6 +1,5 @@
 const mainMediaButton = document.querySelector('.main_media_button');
 const navMenu = document.querySelector('.nav-menu');
-const navList = document.querySelector('nav-link');
 
 mainMediaButton.addEventListener('click', () => {
   mainMediaButton.classList.toggle('active');

@@ -32,37 +32,6 @@ body {
   float: right;
 }
 
-.nav .container div.main_list ul {
-  display: flex;
-  list-style: none;
-  margin-right: 24px;
-}
-
-.nav .container div.main_list ul li {
-  width: 120px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav .container div.main_list ul li a {
-  text-decoration: none;
-  color: #344563;
-  align-items: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-}
-
-.nav .container div.logo a:hover {
-  color: #050fca;
-}
-
-.nav .container div.main_list .nav-menu .nav-link:hover {
-  transform: scale(1.2);
-  color: #2230d2;
-  transition: transform 0.2s;
-}
-
 .home {
   background-image: url("./img/3.svg");
   background-color: white;
@@ -97,6 +66,10 @@ body {
   margin-right: 10%;
 }
 
+form li {
+  margin-bottom: 20px;
+}
+
 .home li {
   padding-left: 8px;
 }
@@ -104,10 +77,6 @@ body {
 form ul {
   list-style: none;
   padding-left: 0;
-}
-
-form li {
-  margin-bottom: 20px;
 }
 
 .home ul {
@@ -553,6 +522,37 @@ hr {
   flex: 0 0 100%;
 }
 
+.nav .container div.main_list ul {
+  display: flex;
+  list-style: none;
+  margin-right: 24px;
+}
+
+.nav .container div.main_list .nav-menu li {
+  width: 120px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav .container div.main_list ul li a {
+  text-decoration: none;
+  color: #344563;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.nav .container div.logo a:hover {
+  color: #050fca;
+}
+
+.nav .container div.main_list .nav-menu .nav-link:hover {
+  transform: scale(1.2);
+  color: #2230d2;
+  transition: transform 0.2s;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     margin: 0;
@@ -564,7 +564,6 @@ hr {
 
   .nav .container .main_list .nav-menu {
     position: fixed;
-    display: flex;
     top: 40px;
     flex-direction: column;
     transition: 0.3s ease-in-out;
@@ -587,7 +586,6 @@ hr {
   .nav .container div.main_list .nav-menu .nav-link {
     position: relative;
     top: 40px;
-    font-size: 30px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
