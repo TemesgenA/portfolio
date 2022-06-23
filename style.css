@@ -5,7 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.nav{
+.nav {
   width: 100%;
   height: 65px;
   line-height: 65px;
@@ -13,77 +13,54 @@ body {
   background-color: white;
 }
 
-.nav div.logo{
+.nav div.logo {
   margin: 14px 32px;
   width: 180px;
   height: 10px;
   position: absolute;
 }
 
-.nav div.logo a{
+.nav div.logo a {
   text-decoration: none;
-  color: #6070FF;
+  color: #6070ff;
   font-size: 1.8em;
-  }
-
-.nav div.logo a:hover {
-  color: #050fca;
 }
 
-.nav div.main_list{
-  width: 600px;
+.nav div.main_list {
+  width: auto;
   height: 65px;
   float: right;
 }
 
-.nav div.main_list ul{
-  width:100%;
-  height: 65px;
+.nav .container div.main_list ul {
   display: flex;
   list-style: none;
+  margin-right: 24px;
 }
 
-.nav div.main_list ul li{
+.nav .container div.main_list ul li {
   width: 120px;
-  height: 65px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.nav div.main_list ul li a{
+.nav .container div.main_list ul li a {
   text-decoration: none;
   color: #344563;
-  line-height: 65px;
-}
-
-.nav div.main_list ul li a:hover{
-  transform: scale(1.2);
-  color: #2230d2;
-  transition: transform 0.2s;
-}
-
-form li {
-  margin-bottom: 20px;
-}
-
-.nav-ul li {
-  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  color: #344563;
-  margin-left: 32px;
-  margin-right: 32px;
 }
 
-.nav-ul a {
-  text-decoration: none;
+.nav .container div.logo a:hover {
+  color: #050fca;
+}
+
+.nav .container div.main_list ul li a:hover {
+  transform: scale(1.2);
+  color: #2230d2;
   transition: transform 0.2s;
-}
-
-.nav-ul li a {
-  color: #344563;
 }
 
 .home {
@@ -127,6 +104,10 @@ form li {
 form ul {
   list-style: none;
   padding-left: 0;
+}
+
+form li {
+  margin-bottom: 20px;
 }
 
 .home ul {
@@ -572,13 +553,13 @@ hr {
   flex: 0 0 100%;
 }
 
-@media screen and (max-width:768px) {
-  .container{
-      margin: 0;
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0;
   }
 
-  .nav div.logo{
-      margin-left: 15px;
+  .nav div.logo {
+    margin-left: 15px;
   }
 
   .nav .container .main_list .nav-menu {
@@ -586,139 +567,132 @@ hr {
     display: flex;
     top: 40px;
     flex-direction: column;
-    text-align: left;
     transition: 0.3s ease-in-out;
-    width: 100%;
-    height: 100%;
+    text-align: left;
+    width: 100vw;
+    height: 100vh;
     gap: 60px;
-    left: -120%;
+    left: 10%;
+    /* left: -120%; */
+    display: none;
   }
 
-  .nav .container .main_list .nav-menu li a {
-    font-family: 'Poppins';
+  .nav .container div.main_list .nav-menu li {
+    position: relative;
+    top: 40px;
+    font-size: 30px;
+    display: block;
+  }
+
+  .nav .container div.main_list .nav-menu .nav-link {
+    position: relative;
+    top: 40px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    padding: 10rem 2rem;
+    display: block;
+    color: white;
   }
 
-  .nav div.main_list{
-      width: 100%;
-      margin-top: 65px;
-      height: 0px;
-      overflow: hidden;
-  }
-
-  .nav div.show_list{
-      height: 200px;
-  }
-
-  .nav div.main_list ul{
-      flex-direction: column;
-      width: 100%;
-      height: 200px;
-      top: 80px;
-      right: 0;
-      left: 0;
-  }
-
-  .nav div.main_list ul li{
-      width: 100%;
-      height: 40px;
-  }
-
-  .nav div.media_button {
+  /* Specify humberger button properties */
+  .nav .container div.main_media_button {
     width: 40px;
     height: 40px;
     background-color: transparent;
     position: absolute;
-    right: 15px;
-    top: 12px;
-    display: none;
-  }
-  
-  .nav div.media_button button.main_media_button {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;;
-    outline: 0;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .nav div.media_button button.main_media_button span{
-    width: 98%;
-    height: 3px;
+    right: 24px;
+    top: 24px;
     display: block;
-    background-color: #6070FF;
-    margin-top: 9px;
-    margin-bottom: 10px;
   }
-  
-  .nav div.media_button button.main_media_button:hover span:nth-of-type(1){
+
+  /* Specify properties of the bars on the humbergur */
+  nav .container .main_media_button .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: #6070ff;
+  }
+
+  /* Animation on humbergur when hoved over it (on inactive state) */
+  .nav .container .main_media_button:hover span:nth-of-type(1) {
     transform: rotateY(180deg);
     transition: all 0.5s;
-    background-color: #6070FF;
+    background-color: #6070ff;
   }
-  
-  .nav div.media_button button.main_media_button:hover span:nth-of-type(2){
+
+  .nav .container .main_media_button:hover span:nth-of-type(2) {
     transform: rotateY(180deg);
     transition: all 0.4s;
-    background-color: #6070FF;
+    background-color: #6070ff;
   }
-  
-  .nav div.media_button button.main_media_button:hover span:nth-of-type(3){
+
+  .nav .container .main_media_button:hover span:nth-of-type(3) {
     transform: rotateY(180deg);
     transition: all 0.3s;
-    background-color: #6070FF;
+    background-color: #6070ff;
   }
 
-  .nav div.media_button{
-      display: block;
-  }
-
-  .nav .container .main_list .nav-menu.active {
-    background: #6070FF;
+  /* Navigation drawer plays in active */
+  .nav .container div.main_list .nav-menu.active {
+    background: #6070ff;
     mix-blend-mode: multiply;
     inset: 0 0 0 0;
     background-repeat: no-repeat;
     backdrop-filter: blur(0.75em);
+    gap: 120px;
+    display: block;
   }
 
-  .nav .container div.media_button button.active span:nth-of-type(1) {
+  .nav .container div.main_list .nav-menu .nav-link.active {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    display: block;
+    align-items: center;
+    color: #fff;
+    padding: 10rem 1rem;
+  }
+
+  /* Action when main_media_button (humbergur is clicked/taped) */
+  .nav .container .main_media_button.active span:nth-of-type(1) {
     transform: rotate3d(0, 0, 1, 45deg);
-    position: absolute;
+    position: fixed;
     margin: 0;
+    margin-top: 20px;
     background: white;
   }
-  
-  .nav .container div.media_button button.active span:nth-of-type(2) {
+
+  .nav .container .main_media_button.active span:nth-of-type(2) {
     display: none;
   }
-  
-  .nav .container div.media_button button.active span:nth-of-type(3) {
+
+  .nav .container .main_media_button.active span:nth-of-type(3) {
     transform: rotate3d(0, 0, 1, -45deg);
-    position: absolute;
+    position: fixed;
     margin: 0;
     background: white;
+    margin-top: 20px;
   }
-  
-  .nav div.media_button button.active:hover span:nth-of-type(1) {
+
+  /* Animation on humbergur icon in the active state */
+  .nav .container .main_media_button.active:hover span:nth-of-type(1) {
     transform: rotate3d(0, 0, 1, 20deg);
   }
-  
-  .nav div.media_button button.active:hover span:nth-of-type(3) {
+
+  .nav .container .main_media_button.active:hover span:nth-of-type(3) {
     transform: rotate3d(0, 0, 1, -20deg);
   }
-  
 }
 
-@media screen and (min-width:768px) {
-  .nav div.media_button button.main_media_button {
+@media screen and (min-width: 768px) {
+  .nav .container .main_media_button {
     display: none;
   }
 }
@@ -826,11 +800,6 @@ hr {
 
   .shape {
     display: none;
-  }
-
-  .nav-ul a:hover {
-    transform: scale(1.2);
-    color: #2230d2;
   }
 
   .form-min {
