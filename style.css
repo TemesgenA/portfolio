@@ -6,7 +6,7 @@ body {
 }
 
 .nav {
-  width: 100%;
+  width: 100vw;
   height: 65px;
   line-height: 65px;
   text-align: center;
@@ -57,7 +57,7 @@ body {
   color: #050fca;
 }
 
-.nav .container div.main_list ul li a:hover {
+.nav .container div.main_list .nav-menu .nav-link:hover {
   transform: scale(1.2);
   color: #2230d2;
   transition: transform 0.2s;
@@ -573,7 +573,6 @@ hr {
     height: 100vh;
     gap: 60px;
     left: 10%;
-    /* left: -120%; */
     display: none;
   }
 
@@ -582,6 +581,7 @@ hr {
     top: 40px;
     font-size: 30px;
     display: block;
+    gap: 40px;
   }
 
   .nav .container div.main_list .nav-menu .nav-link {
@@ -644,8 +644,9 @@ hr {
     inset: 0 0 0 0;
     background-repeat: no-repeat;
     backdrop-filter: blur(0.75em);
-    gap: 120px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
   }
 
   .nav .container div.main_list .nav-menu .nav-link.active {
@@ -679,15 +680,6 @@ hr {
     margin: 0;
     background: white;
     margin-top: 20px;
-  }
-
-  /* Animation on humbergur icon in the active state */
-  .nav .container .main_media_button.active:hover span:nth-of-type(1) {
-    transform: rotate3d(0, 0, 1, 20deg);
-  }
-
-  .nav .container .main_media_button.active:hover span:nth-of-type(3) {
-    transform: rotate3d(0, 0, 1, -20deg);
   }
 }
 
