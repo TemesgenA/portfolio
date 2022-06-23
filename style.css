@@ -2,7 +2,7 @@ body {
   background-color: #f4f5f7;
   width: 100vw;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav {
@@ -49,7 +49,7 @@ body {
   margin-bottom: 0;
   font-weight: 900;
   line-height: 52px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -107,7 +107,7 @@ form ul {
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -116,7 +116,7 @@ h2 {
 }
 
 .work-content {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 13px;
   line-height: 24px;
@@ -319,7 +319,7 @@ button:hover {
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -389,7 +389,7 @@ button:hover {
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -414,7 +414,7 @@ button:hover {
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -488,7 +488,7 @@ form {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -504,7 +504,7 @@ form {
   border-radius: 8px;
   width: 327px;
   height: 170px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -586,7 +586,7 @@ hr {
   .nav .container div.main_list .nav-menu .nav-link {
     position: relative;
     top: 40px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -644,11 +644,11 @@ hr {
     backdrop-filter: blur(0.75em);
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 40px;
   }
 
   .nav .container div.main_list .nav-menu .nav-link.active {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
