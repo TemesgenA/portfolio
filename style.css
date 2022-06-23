@@ -1,8 +1,9 @@
 body {
   background-color: #f4f5f7;
-  width: 100vw;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -600,7 +601,7 @@ hr {
     width: 40px;
     height: 40px;
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     right: 24px;
     top: 24px;
     display: block;
@@ -637,6 +638,7 @@ hr {
 
   /* Navigation drawer plays in active */
   .nav .container div.main_list .nav-menu.active {
+    position: fixed;
     background: #6070ff;
     mix-blend-mode: multiply;
     inset: 0 0 0 0;
@@ -646,6 +648,8 @@ hr {
     flex-direction: column;
     gap: 40px;
     margin: 0;
+    height: 100vh;
+    width: 100vw;
   }
 
   .nav .container div.main_list .nav-menu .nav-link.active {
