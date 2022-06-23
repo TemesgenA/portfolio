@@ -564,7 +564,6 @@ hr {
   }
 
   .nav .container .main_list .nav-menu {
-    position: fixed;
     top: 40px;
     flex-direction: column;
     transition: 0.3s ease-in-out;
@@ -639,11 +638,11 @@ hr {
   /* Navigation drawer plays in active */
   .nav .container div.main_list .nav-menu.active {
     position: fixed;
-    background: #6070ff;
-    mix-blend-mode: multiply;
+    background-color: rgb(96, 112, 255, 0.9);
+    backdrop-filter: blur(3px);
+    overflow: hidden;
     inset: 0 0 0 0;
     background-repeat: no-repeat;
-    backdrop-filter: blur(0.75em);
     display: flex;
     flex-direction: column;
     gap: 40px;
