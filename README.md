@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 ## My Portfolio
 
 - Build a personal portfolio site
@@ -9,8 +7,9 @@
 
 ## Built With
 
-- html
-- css
+- HTML
+- CSS
+- JAVASCRIPT
 - Flexbox
 
 ## Live Demo

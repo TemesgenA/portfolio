@@ -13,23 +13,25 @@
 </head>
 
 <body>
-    <header>
-        <a id="logo" href="#home"><img src="./img/Logo-Placeholder.png" alt="logo icon"></a>
-        <nav>
-            <ul class="nav-ul">
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li><img class="nav-pic" src="./img/icon-menu.png" alt="nav menu icon"></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Temesgen</a>
+            </div>
+            <div class="main_list">
+                <ul class="nav-menu">
+                    <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="main_media_button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
     <section id="home" class="home">
         <div class="home-content">
             <h1>
@@ -263,7 +265,8 @@
                             <input type="text" name="name" id="user-name" placeholder="Your name here.." required>
                         </li>
                         <li>
-                            <input type="email" name="email" id="email-address" placeholder="Your E-mail here.." required>
+                            <input type="email" name="email" id="email-address" placeholder="Your E-mail here.."
+                                required>
                         </li>
                         <li>
                             <textarea name="message" id="msg" maxlength="500" placeholder="Write your Message Here"
@@ -277,6 +280,7 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
