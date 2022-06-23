@@ -645,6 +645,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin: 0;
   }
 
   .nav .container div.main_list .nav-menu .nav-link.active {
