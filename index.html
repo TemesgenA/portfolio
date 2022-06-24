@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div class="modal-container"></div>
     <nav class="nav">
         <div class="container">
             <div class="logo">
@@ -62,125 +63,11 @@
             </ul>
         </div>
     </section>
-    <section id="portfolio" class="work">
-        <div class="grid-item grid-item1">
-            <div class="work-img work-img1">
-            </div>
-            <div class="description-container1">
-                <h2>Tonic</h2>
-                <div class="work-content work-content1">
-                    <p>CANCOPY</p>
-                    <ul>
-                        <li>Back End Dev</li>
-                        <li>2015</li>
-                    </ul>
-                </div>
-                <div class="work-description">
-                    <p class="p-1">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                </div>
-                <div class="categories">
-                    <ul>
-                        <li>html</li>
-                        <li>css</li>
-                        <li>javascript</li>
-                    </ul>
-                </div>
-                <div class="button">
-                    <button type="button" class="work-button">See Project</button>
-                </div>
-            </div>
-        </div>
-        <div class="grid-item grid-item2">
-            <div class="work-img work-img2">
-            </div>
-            <div class="description-container2">
-                <div></div>
-                <h2>Tonic</h2>
-                <div class="work-content work-content2">
-                    <p>CANCOPY</p>
-                    <ul>
-                        <li>Back End Dev</li>
-                        <li>2015</li>
-                    </ul>
-                </div>
-                <div class="work-description">
-                    <p class="p-1">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                </div>
-                <div class="categories">
-                    <ul>
-                        <li>html</li>
-                        <li>css</li>
-                        <li>javascript</li>
-                    </ul>
-                </div>
-                <div class="button">
-                    <button type="button" class="work-button">See Project</button>
-                </div>
-            </div>
-        </div>
-        <div class="grid-item grid-item3">
-            <div class="work-img work-img3">
-            </div>
-            <div class="description-container3">
-                <h2>Tonic</h2>
-                <div class="work-content work-content3">
-                    <p>CANCOPY</p>
-                    <ul>
-                        <li>Back End Dev</li>
-                        <li>2015</li>
-                    </ul>
-                </div>
-                <div class="work-description">
-                    <p class="p-1">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                </div>
-                <div class="categories">
-                    <ul>
-                        <li>html</li>
-                        <li>css</li>
-                        <li>javascript</li>
-                    </ul>
-                </div>
-                <div class="button">
-                    <button type="button" class="work-button">See Project</button>
-                </div>
-            </div>
-        </div>
-        <div class="grid-item grid-item4">
-            <div class="work-img work-img4">
-            </div>
-            <div class="description-container4">
-                <h2>Tonic</h2>
-                <div class="work-content work-content1">
-                    <p>CANCOPY</p>
-                    <ul>
-                        <li>Back End Dev</li>
-                        <li>2015</li>
-                    </ul>
-                </div>
-                <div class="work-description">
-                    <p class="p-1">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                </div>
-                <div class="categories">
-                    <ul>
-                        <li>html</li>
-                        <li>css</li>
-                        <li>javascript</li>
-                    </ul>
-                </div>
-                <div class="button">
-                    <button type="button" class="work-button">See Project</button>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    <!-- projects section -->
+    <section id="projects"></section>
+    <!-- about section -->
+
     <section id="about" class="about-myself">
         <div class="about-description">
             <div class="about-header">
@@ -259,7 +146,7 @@
                     project that needs coding. I’d love to help with it </p>
             </div>
             <div class="form-width">
-                <form method="POST" action="https://formspree.io/f/xyyovkvo">
+                <form method="POST" action="https://formspree.io/f/xyyovkvo" id="contact-form">
                     <ul class="form-ul">
                         <li>
                             <input type="text" name="name" id="user-name" placeholder="Your name here.." required>
@@ -273,6 +160,7 @@
                                 required></textarea>
                         </li>
                         <li>
+                            <small class="error"></small>
                             <button type="submit">Get In Touch</button>
                         </li>
                     </ul>
