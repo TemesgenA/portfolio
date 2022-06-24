@@ -20,8 +20,8 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
-    liveVersion: 'https://ibizugbe.github.io/My-Portfolio/',
-    sourceCode: 'https://github.com/Ibizugbe/My-Portfolio',
+    liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
+    sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
   },
 
   {
@@ -31,8 +31,8 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
-    liveVersion: 'https://ibizugbe.github.io/My-Portfolio/',
-    sourceCode: 'https://github.com/Ibizugbe/My-Portfolio',
+    liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
+    sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
   },
 
   {
@@ -42,8 +42,8 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
-    liveVersion: 'https://ibizugbe.github.io/My-Portfolio/',
-    sourceCode: 'https://github.com/Ibizugbe/My-Portfolio',
+    liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
+    sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
   },
 
   {
@@ -53,8 +53,8 @@ const projects = [
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
-    liveVersion: 'https://ibizugbe.github.io/My-Portfolio/',
-    sourceCode: 'https://github.com/Ibizugbe/My-Portfolio',
+    liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
+    sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
   },
 ];
 
