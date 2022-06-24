@@ -185,7 +185,7 @@ modal.innerHTML = `
       <li class="language-used modal-li">javaScript</li>
     </ul>
     <hr class="modal-hr" />
-    <a href="https://ibizugbe.github.io/My-Portfolio/">
+    <a href="https://temesgena.github.io/Portfolio-mobile/">
       <button class="btn modal-btn" type="submit">
         See live
         <img
@@ -195,7 +195,7 @@ modal.innerHTML = `
         />
       </button>
     </a>
-    <a href="https://github.com/Ibizugbe/My-Portfolio">
+    <a href="https://temesgena.github.io/Portfolio-mobile/">
       <button class="btn modal-btn" type="submit">
         See Source
         <img
