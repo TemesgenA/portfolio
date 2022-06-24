@@ -11,7 +11,6 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 
-// popup window
 const projects = [
   {
     name: 'Tonic',
@@ -59,7 +58,6 @@ const projects = [
 ];
 
 projects.forEach((element, i) => {
-  // create all elements used for card
   const projectContainer = document.querySelector('#projects');
   const projectDiv = document.createElement('div');
   const projectImageDiv = document.createElement('div');
@@ -78,18 +76,14 @@ projects.forEach((element, i) => {
   const languageUl = document.createElement('ul');
   const projectBtn = document.createElement('button');
 
-  // initialise elements
-  // card image
   projectImageWeb.src = element.featuredImg;
   projectImageWeb.classList.add('project-image-web');
   projectImageWeb.alt = 'project-image';
   projectImageMobile.src = element.featuredImgMobile;
   projectImageMobile.classList.add('first-project-image');
   projectImageMobile.alt = 'First-project';
-  // cardheader
   projectHeader.classList.add('project-heading');
   projectHeader.innerText = element.name;
-  // stact text
   canopyText.innerText = 'canopy';
   canopyText.classList.add('content-text', 'canopy');
   countImage.src = './Assets/vectors/Counter.svg';
@@ -102,7 +96,6 @@ projects.forEach((element, i) => {
   yearText.classList.add('content-text');
   pDescription.innerText = 'A daily selection of privately personalized reads; no accounts or sign-ups required';
   languageUl.classList.add('languages');
-  // place elements in document
   projectDiv.classList.add('project');
   projectDiv.append(projectImageDiv, projectContentDiv);
   projectImageDiv.classList.add('project-image');
@@ -131,13 +124,11 @@ projects.forEach((element, i) => {
 
   projectBtn.classList.add('btn', 'project-link');
   projectBtn.innerText = 'see project';
-  // reverse  card
   if (i % 2 !== 0) {
     projectDiv.classList.add('card-reverse');
   }
 });
 
-// Menu PopUP
 const modalContainer = document.querySelector('.modal-container');
 const modal = document.createElement('div');
 modalContainer.append(modal);
@@ -150,24 +141,12 @@ modal.innerHTML = `
 </div>
 <div class="small-description">
   <p class="canopy modal-describe">CANOPY</p>
-  <img
-    src="./Assets/vectors/Counter.svg"
-    class="count-vector"
-    alt="null"
-  />
+  <img src="./Assets/vectors/Counter.svg" class="count-vector" alt="null"/>
   <p class="modal-describe">BACK END DEV</p>
-  <img
-    src="./Assets/vectors/Counter.svg"
-    class="count-vector"
-    alt="null"
-  />
+  <img src="./Assets/vectors/Counter.svg" class="count-vector" alt="null"/>
   <p class="modal-describe">2015</p>
 </div>
-<img
-  src="./Assets/other-images/Modal-Snapshoot-Portfolio.png"
-  class="modal-img"
-  alt=""
-/>
+<img src="./Assets/other-images/Modal-Snapshoot-Portfolio.png" class="modal-img" alt=""/>
 <div class="modal-content">
   <p class="modal-texts">
     Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -188,21 +167,13 @@ modal.innerHTML = `
     <a href="https://temesgena.github.io/Portfolio-mobile/">
       <button class="btn modal-btn" type="submit">
         See live
-        <img
-          src="./Assets/vectors/git-modalicon.svg"
-          class="modal-vectors"
-          alt="git"
-        />
+        <img src="./Assets/vectors/git-modalicon.svg" class="modal-vectors" alt="git"/>
       </button>
     </a>
     <a href="https://temesgena.github.io/Portfolio-mobile/">
       <button class="btn modal-btn" type="submit">
         See Source
-        <img
-          src="./Assets/vectors/source-code-icon.svg"
-          class="modal-vectors"
-          alt="source-code"
-        />
+        <img src="./Assets/vectors/source-code-icon.svg" class="modal-vectors" alt="source-code"/>
       </button>
     </a>
   </div>
