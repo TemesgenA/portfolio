@@ -17,7 +17,7 @@ const projects = [
     featuredImg: 'Assets/other-images/1st-project-image.png',
     featuredImgMobile: 'Assets/other-images/project-1.jpg',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
+      'Tonic Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
     liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
     sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
@@ -28,7 +28,7 @@ const projects = [
     featuredImg: 'Assets/other-images/2nd-project-image.png',
     featuredImgMobile: 'Assets/other-images/project-2.jpg',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
+      'Multi post Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
     liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
     sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
@@ -39,7 +39,7 @@ const projects = [
     featuredImg: 'Assets/other-images/3rd-project-image.png',
     featuredImgMobile: 'Assets/other-images/project-3.jpg',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
+      'Another Tonic Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
     liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
     sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
@@ -50,7 +50,7 @@ const projects = [
     featuredImg: 'Assets/other-images/4th-project-image.png',
     featuredImgMobile: 'Assets/other-images/project-4.jpg',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
+      'Another multipost Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
     liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
     sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
@@ -124,6 +124,7 @@ projects.forEach((element, i) => {
 
   projectBtn.classList.add('btn', 'project-link');
   projectBtn.innerText = 'see project';
+  projectBtn.setAttribute('id', i);
   if (i % 2 !== 0) {
     projectDiv.classList.add('card-reverse');
   }
@@ -134,38 +135,27 @@ const modal = document.createElement('div');
 modalContainer.append(modal);
 modal.classList.add('modal');
 
-modal.innerHTML = `
+const modalBtnPop = document.querySelectorAll('.project-link');
+// eventlistener to open modal
+modalBtnPop.forEach((n) => {
+  const btnId = n.id;
+  n.addEventListener('click', () => {
+    modalContainer.style.display = 'flex';
+    modal.innerHTML = `
 <div class="modal-header">
-    <h4 class="modal-heading">Tonic</h4>
-    <h4 class="modal-close">&times;</h4>
+    <h4 class="modal-heading">${projects[btnId].name}</h4>
+    <button class="modal-close">&times;</button>
 </div>
 <div class="small-description">
   <p class="canopy modal-describe">CANOPY</p>
-  <img
-    src="./Assets/vectors/Counter.svg"
-    class="count-vector"
-    alt="null"
-  />
+  <img src="./Assets/vectors/Counter.svg" class="count-vector" alt="null"/>
   <p class="modal-describe">BACK END DEV</p>
-  <img
-    src="./Assets/vectors/Counter.svg"
-    class="count-vector"
-    alt="null"
-  />
+  <img src="./Assets/vectors/Counter.svg" class="count-vector" alt="null"/>
   <p class="modal-describe">2015</p>
 </div>
-<img
-  src="./Assets/other-images/Modal-Snapshoot-Portfolio.png"
-  class="modal-img"
-  alt=""
-/>
+<img src="./${projects[btnId].featuredImg}" class="modal-img" alt="null"/>
 <div class="modal-content">
-  <p class="modal-texts">
-    Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's standard dummy text
-    ever since the 1500s, when an unknown printer took a galley of type
-    and scrambled it 1960s with the releaLorem Ipsum is simply dummy
-  </p>
+  <p class="modal-texts">${projects[btnId].description}</p>
   <div class="modal-contact">
     <ul class="languages modal-ul">
       <li class="language-used modal-li">HTML</li>
@@ -179,39 +169,24 @@ modal.innerHTML = `
     <a href="https://temesgena.github.io/Portfolio-mobile/">
       <button class="btn modal-btn" type="submit">
         See live
-        <img
-          src="./Assets/vectors/git-modalicon.svg"
-          class="modal-vectors"
-          alt="git"
-        />
+        <img src="./Assets/vectors/git-modalicon.svg" class="modal-vectors" alt="git"/>
       </button>
     </a>
     <a href="https://temesgena.github.io/Portfolio-mobile/">
       <button class="btn modal-btn" type="submit">
         See Source
-        <img
-          src="./Assets/vectors/source-code-icon.svg"
-          class="modal-vectors"
-          alt="source-code"
-        />
+        <img src="./Assets/vectors/source-code-icon.svg" class="modal-vectors" alt="source-code"/>
       </button>
     </a>
   </div>
 </div>
 `;
-
-const modalBtnPop = document.querySelectorAll('.project-link');
-const closeButton = document.querySelector('.modal-close');
-// eventlistener to open modal
-modalBtnPop.forEach((n) => {
-  n.addEventListener('click', () => {
-    modalContainer.style.display = 'flex';
+    // listen for close
+    const closeButton = document.querySelector('.modal-close');
+    closeButton.addEventListener('click', () => {
+      modalContainer.style.display = 'none';
+    });
   });
-});
-
-// listen for close
-closeButton.addEventListener('click', () => {
-  modalContainer.style.display = 'none';
 });
 
 const contactForm = document.querySelector('#contact-form');
