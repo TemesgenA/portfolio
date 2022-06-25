@@ -885,10 +885,20 @@ hr {
 }
 
 .modal-close {
+  display: flex;
+  justify-content: flex-end;
   color: #67798e;
   font-size: 38px;
   font-weight: 300;
   margin: 0;
+  border: white;
+  background-color: white;
+}
+
+.modal-close button {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
 }
 
 .small-description {
@@ -943,8 +953,12 @@ hr {
   padding: 8px 10px 8px 10px;
 }
 
-.modal-btn:hover {
-  background-color: #c6c2f892;
+.modal-close:hover {
+  color: #f2f4f8;
+}
+
+.modal-header button:hover {
+  background-color: #c5cee2;
 }
 
 .modal-vectors {

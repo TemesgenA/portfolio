@@ -17,7 +17,7 @@ const projects = [
     featuredImg: 'Assets/other-images/1st-project-image.png',
     featuredImgMobile: 'Assets/other-images/project-1.jpg',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
+      'Tonic Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
     liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
     sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
@@ -28,7 +28,7 @@ const projects = [
     featuredImg: 'Assets/other-images/2nd-project-image.png',
     featuredImgMobile: 'Assets/other-images/project-2.jpg',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
+      'Multi post Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
     liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
     sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
@@ -39,7 +39,7 @@ const projects = [
     featuredImg: 'Assets/other-images/3rd-project-image.png',
     featuredImgMobile: 'Assets/other-images/project-3.jpg',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
+      'Another Tonic Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
     liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
     sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
@@ -50,7 +50,7 @@ const projects = [
     featuredImg: 'Assets/other-images/4th-project-image.png',
     featuredImgMobile: 'Assets/other-images/project-4.jpg',
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
+      'Another multipost Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
     liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
     sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
@@ -144,7 +144,7 @@ modalBtnPop.forEach((n) => {
     modal.innerHTML = `
 <div class="modal-header">
     <h4 class="modal-heading">${projects[btnId].name}</h4>
-    <h4 class="modal-close">&times;</h4>
+    <button class="modal-close">&times;</button>
 </div>
 <div class="small-description">
   <p class="canopy modal-describe">CANOPY</p>
@@ -153,14 +153,9 @@ modalBtnPop.forEach((n) => {
   <img src="./Assets/vectors/Counter.svg" class="count-vector" alt="null"/>
   <p class="modal-describe">2015</p>
 </div>
-<img src="./${projects[btnId].featuredImg}" class="modal-img" alt=""/>
+<img src="./${projects[btnId].featuredImg}" class="modal-img" alt="null"/>
 <div class="modal-content">
-  <p class="modal-texts">
-    Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's standard dummy text
-    ever since the 1500s, when an unknown printer took a galley of type
-    and scrambled it 1960s with the releaLorem Ipsum is simply dummy
-  </p>
+  <p class="modal-texts">${projects[btnId].description}</p>
   <div class="modal-contact">
     <ul class="languages modal-ul">
       <li class="language-used modal-li">HTML</li>
