@@ -188,3 +188,17 @@ modalBtnPop.forEach((n) => {
     });
   });
 });
+
+const contactForm = document.querySelector('#contact-form');
+const contactEmail = document.querySelector('#email-address');
+const errorHolder = document.querySelector('.error');
+contactForm.addEventListener('submit', (e) => {
+  const message = contactEmail.value;
+  const messageList = message.replace(/[^a-zA-Z]/g, '').split('');
+  for (let i = 0; i < messageList.length; i += 1) {
+    if (messageList[i] === messageList[i].toUpperCase()) {
+      errorHolder.innerText = 'Error: Write your email with lowercase letters';
+      e.preventDefault();
+    }
+  }
+});

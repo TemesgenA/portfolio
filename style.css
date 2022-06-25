@@ -969,3 +969,7 @@ hr {
 .modal-img {
   width: 100%;
 }
+
+.error {
+  color: red;
+}
