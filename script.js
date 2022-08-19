@@ -13,14 +13,14 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 const projects = [
   {
-    name: 'Tonic',
-    featuredImg: 'Assets/other-images/1st-project-image.png',
-    featuredImgMobile: 'Assets/other-images/project-1.jpg',
+    name: 'health-summit',
+    featuredImg: 'Assets/other-images/health-summit1.png',
+    featuredImgMobile: 'Assets/other-images/health-summit-mobile.png',
     description:
-      'Tonic Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
+      'A conference website project for the World Health Summit',
     technologies: ['HTML', 'CSS', 'javaScript'],
-    liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
-    sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
+    liveVersion: 'https://temesgena.github.io/health-summit/',
+    sourceCode: 'https://github.com/TemesgenA/health-summit',
   },
 
   {
