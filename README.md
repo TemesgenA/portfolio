@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://temesgena.github.io/Portfolio-mobile/)
+[Live Demo Link](https://temesgena.github.io/portfolio/)
 
 ### Author
 
