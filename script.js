@@ -30,8 +30,8 @@ const projects = [
     description:
       'Multi post Lorem ipsum dolor sit amet consectetur, adipisicing elit. In illumlaudantium aliquam quaerat dicta minima.',
     technologies: ['HTML', 'CSS', 'javaScript'],
-    liveVersion: 'https://temesgena.github.io/Portfolio-mobile/',
-    sourceCode: 'https://github.com/TemesgenA/Portfolio-mobile',
+    liveVersion: 'https://temesgena.github.io/health-summit/',
+    sourceCode: 'https://temesgena.github.io/health-summit',
   },
 
   {
